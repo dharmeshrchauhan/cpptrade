@@ -357,7 +357,7 @@ static std::vector<struct HttpApiEntry> apiRegistry = {
 	{ false, "/marketList",		false, reqMarketList, false, false },
 	{ true,  "/marketAdd",		false, reqMarketAdd, true, true },
 
-	{ false, "^/book/([A-Z]+)",	true,  reqOrderBookList, false, false },
+	{ false, "/book",		false,  reqOrderBookList, false, false },
 	{ true,  "/orderAdd",		false, reqOrderAdd, true, true },
 	{ true,  "/orderCancel",	false, reqOrderCancel, true, true },
 	{ true,  "/orderModify",	false, reqOrderModify, true, true },
